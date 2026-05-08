@@ -1,0 +1,28 @@
+
+hprobes v0.5.4  |  model: google/medgemma-27b-text-it  |  samples: 500
+────────────────────────────────────────────────────────────────────
+  Dataset:     validation.jsonl  (500 samples, format=medmcqa)
+  Keys:        options_key='options'  answer_key='cop'
+  Contrastive: True
+  Nudge:       none
+  Loading google/medgemma-27b-text-it...Loading weights:   0%|          | 0/808 [00:00<?, ?it/s]Loading weights:   0%|          | 1/808 [00:00<03:21,  4.01it/s]Loading weights:   2%|▏         | 16/808 [00:00<00:14, 54.92it/s]Loading weights:   4%|▎         | 30/808 [00:00<00:09, 80.44it/s]Loading weights:   5%|▌         | 44/808 [00:00<00:08, 94.98it/s]Loading weights:   8%|▊         | 63/808 [00:00<00:06, 123.49it/s]Loading weights:  10%|█         | 81/808 [00:00<00:05, 131.85it/s]Loading weights:  12%|█▏        | 96/808 [00:00<00:05, 122.42it/s]Loading weights:  14%|█▍        | 115/808 [00:01<00:04, 139.77it/s]Loading weights:  16%|█▋        | 133/808 [00:01<00:04, 144.74it/s]Loading weights:  18%|█▊        | 149/808 [00:01<00:04, 135.00it/s]Loading weights:  21%|██        | 169/808 [00:01<00:04, 152.03it/s]Loading weights:  23%|██▎       | 185/808 [00:01<00:04, 139.46it/s]Loading weights:  25%|██▍       | 200/808 [00:01<00:04, 137.82it/s]Loading weights:  27%|██▋       | 218/808 [00:01<00:03, 148.05it/s]Loading weights:  29%|██▉       | 237/808 [00:01<00:03, 152.06it/s]Loading weights:  31%|███▏      | 253/808 [00:02<00:03, 140.15it/s]Loading weights:  34%|███▍      | 274/808 [00:02<00:03, 157.30it/s]Loading weights:  36%|███▌      | 291/808 [00:02<00:03, 132.44it/s]Loading weights:  38%|███▊      | 306/808 [00:02<00:03, 131.40it/s]Loading weights:  40%|███▉      | 320/808 [00:02<00:03, 130.58it/s]Loading weights:  41%|████▏     | 334/808 [00:02<00:03, 126.99it/s]Loading weights:  43%|████▎     | 347/808 [00:02<00:03, 121.82it/s]Loading weights:  45%|████▍     | 360/808 [00:02<00:03, 120.67it/s]Loading weights:  47%|████▋     | 378/808 [00:02<00:03, 136.44it/s]Loading weights:  49%|████▊     | 392/808 [00:03<00:03, 136.90it/s]Loading weights:  50%|█████     | 406/808 [00:03<00:03, 133.60it/s]Loading weights:  52%|█████▏    | 420/808 [00:03<00:03, 128.83it/s]Loading weights:  54%|█████▎    | 434/808 [00:03<00:03, 118.36it/s]Loading weights:  55%|█████▌    | 447/808 [00:03<00:03, 117.39it/s]Loading weights:  57%|█████▋    | 460/808 [00:03<00:02, 120.43it/s]Loading weights:  60%|█████▉    | 482/808 [00:03<00:02, 147.31it/s]Loading weights:  62%|██████▏   | 498/808 [00:03<00:02, 136.61it/s]Loading weights:  63%|██████▎   | 513/808 [00:04<00:02, 135.43it/s]Loading weights:  66%|██████▌   | 533/808 [00:04<00:01, 152.24it/s]Loading weights:  68%|██████▊   | 549/808 [00:04<00:01, 148.73it/s]Loading weights:  70%|██████▉   | 565/808 [00:04<00:01, 137.98it/s]Loading weights:  72%|███████▏  | 585/808 [00:04<00:01, 153.41it/s]Loading weights:  74%|███████▍  | 601/808 [00:04<00:01, 146.37it/s]Loading weights:  76%|███████▌  | 616/808 [00:04<00:01, 126.09it/s]Loading weights:  78%|███████▊  | 630/808 [00:04<00:01, 128.73it/s]Loading weights:  81%|████████  | 651/808 [00:04<00:01, 149.15it/s]Loading weights:  83%|████████▎ | 667/808 [00:05<00:01, 138.79it/s]Loading weights:  84%|████████▍ | 682/808 [00:05<00:00, 136.06it/s]Loading weights:  87%|████████▋ | 699/808 [00:05<00:00, 143.95it/s]Loading weights:  89%|████████▉ | 718/808 [00:05<00:00, 151.96it/s]Loading weights:  91%|█████████ | 734/808 [00:05<00:00, 139.68it/s]Loading weights:  93%|█████████▎| 754/808 [00:05<00:00, 153.96it/s]Loading weights:  95%|█████████▌| 770/808 [00:05<00:00, 149.92it/s]Loading weights:  97%|█████████▋| 786/808 [00:05<00:00, 137.73it/s]Loading weights: 100%|█████████▉| 805/808 [00:06<00:00, 150.35it/s]Loading weights: 100%|██████████| 808/808 [00:06<00:00, 134.36it/s]
+ done
+  Fitting (l1_C=0.5)...[hprobes] Layers: 62  |  Features: 1,333,248  |  Top-K: 5,000
+CETT extraction:   0%|          | 0/500 [00:00<?, ?it/s]CETT extraction: 100%|██████████| 500/500 [00:00<00:00, 1284232.70it/s]
+[hprobes] Skipped: 500
+[hprobes] Valid: 0  |  Accuracy: 0.000
+  WARNING: only 0 valid samples — probe may be unreliable.
+Traceback (most recent call last):
+  File "/home/ubuntu/hprobes/.venv/bin/hprobes", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/ubuntu/hprobes/src/hprobes/cli.py", line 657, in main
+    cmd_run(args)
+  File "/home/ubuntu/hprobes/src/hprobes/cli.py", line 246, in cmd_run
+    probe.fit(samples, options_key=options_key, answer_key=answer_key)
+  File "/home/ubuntu/hprobes/src/hprobes/probe.py", line 208, in fit
+    X = np.stack([v[self._top_k_idx] for v in cett_raw], axis=0)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hprobes/.venv/lib/python3.12/site-packages/numpy/_core/shape_base.py", line 454, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack

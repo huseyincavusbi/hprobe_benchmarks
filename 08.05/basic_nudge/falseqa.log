@@ -1,0 +1,36 @@
+
+hprobes v0.5.4  |  model: google/medgemma-27b-text-it  |  samples: 500
+────────────────────────────────────────────────────────────────────
+  Dataset:     medical_falseqa.jsonl  (100 samples, format=medqa)
+  Keys:        options_key='options'  answer_key='answer_idx'
+  Contrastive: True
+  Nudge:       basic
+  Loading google/medgemma-27b-text-it...Loading weights:   0%|          | 0/808 [00:00<?, ?it/s]Loading weights:   0%|          | 1/808 [00:00<03:20,  4.02it/s]Loading weights:   2%|▏         | 16/808 [00:00<00:14, 55.21it/s]Loading weights:   4%|▎         | 30/808 [00:00<00:09, 79.45it/s]Loading weights:   5%|▌         | 44/808 [00:00<00:08, 93.43it/s]Loading weights:   8%|▊         | 62/808 [00:00<00:06, 116.44it/s]Loading weights:  10%|█         | 81/808 [00:00<00:05, 132.28it/s]Loading weights:  12%|█▏        | 96/808 [00:00<00:05, 123.52it/s]Loading weights:  14%|█▍        | 117/808 [00:01<00:04, 146.21it/s]Loading weights:  16%|█▋        | 133/808 [00:01<00:04, 143.62it/s]Loading weights:  18%|█▊        | 148/808 [00:01<00:04, 132.32it/s]Loading weights:  21%|██        | 169/808 [00:01<00:04, 152.14it/s]Loading weights:  23%|██▎       | 185/808 [00:01<00:04, 148.69it/s]Loading weights:  25%|██▍       | 201/808 [00:01<00:04, 138.35it/s]Loading weights:  27%|██▋       | 216/808 [00:01<00:04, 139.84it/s]Loading weights:  29%|██▉       | 235/808 [00:01<00:03, 152.58it/s]Loading weights:  31%|███       | 251/808 [00:02<00:03, 140.31it/s]Loading weights:  33%|███▎      | 266/808 [00:02<00:03, 138.18it/s]Loading weights:  35%|███▌      | 286/808 [00:02<00:03, 154.52it/s]Loading weights:  37%|███▋      | 302/808 [00:02<00:03, 137.66it/s]Loading weights:  39%|███▉      | 317/808 [00:02<00:04, 118.96it/s]Loading weights:  41%|████      | 330/808 [00:02<00:04, 116.77it/s]Loading weights:  42%|████▏     | 343/808 [00:02<00:04, 115.01it/s]Loading weights:  44%|████▍     | 356/808 [00:02<00:03, 117.86it/s]Loading weights:  46%|████▋     | 375/808 [00:02<00:03, 136.37it/s]Loading weights:  48%|████▊     | 390/808 [00:03<00:03, 137.32it/s]Loading weights:  50%|█████     | 405/808 [00:03<00:02, 135.69it/s]Loading weights:  52%|█████▏    | 420/808 [00:03<00:02, 133.02it/s]Loading weights:  54%|█████▎    | 434/808 [00:03<00:03, 122.74it/s]Loading weights:  55%|█████▌    | 447/808 [00:03<00:02, 121.04it/s]Loading weights:  57%|█████▋    | 461/808 [00:03<00:02, 125.98it/s]Loading weights:  60%|█████▉    | 482/808 [00:03<00:02, 148.40it/s]Loading weights:  62%|██████▏   | 498/808 [00:03<00:02, 137.10it/s]Loading weights:  63%|██████▎   | 513/808 [00:04<00:02, 135.32it/s]Loading weights:  66%|██████▌   | 530/808 [00:04<00:01, 140.67it/s]Loading weights:  68%|██████▊   | 548/808 [00:04<00:01, 145.21it/s]Loading weights:  70%|██████▉   | 563/808 [00:04<00:01, 142.13it/s]Loading weights:  72%|███████▏  | 578/808 [00:04<00:01, 139.48it/s]Loading weights:  74%|███████▎  | 594/808 [00:04<00:01, 143.81it/s]Loading weights:  76%|███████▌  | 611/808 [00:04<00:01, 148.83it/s]Loading weights:  78%|███████▊  | 627/808 [00:04<00:01, 143.76it/s]Loading weights:  79%|███████▉  | 642/808 [00:04<00:01, 132.06it/s]Loading weights:  82%|████████▏ | 663/808 [00:05<00:00, 152.54it/s]Loading weights:  84%|████████▍ | 679/808 [00:05<00:00, 146.30it/s]Loading weights:  86%|████████▌ | 694/808 [00:05<00:00, 133.82it/s]Loading weights:  89%|████████▊ | 716/808 [00:05<00:00, 155.23it/s]Loading weights:  91%|█████████ | 733/808 [00:05<00:00, 136.43it/s]Loading weights:  93%|█████████▎| 751/808 [00:05<00:00, 146.65it/s]Loading weights:  95%|█████████▌| 768/808 [00:05<00:00, 152.43it/s]Loading weights:  97%|█████████▋| 784/808 [00:05<00:00, 140.04it/s]Loading weights:  99%|█████████▉| 799/808 [00:06<00:00, 137.31it/s]Loading weights: 100%|██████████| 808/808 [00:06<00:00, 134.13it/s]
+ done
+  Fitting (l1_C=0.5)...[hprobes] Layers: 62  |  Features: 1,333,248  |  Top-K: 5,000
+CETT extraction:   0%|          | 0/100 [00:00<?, ?it/s]CETT extraction:   8%|▊         | 8/100 [00:01<00:17,  5.12it/s]CETT extraction:  16%|█▌        | 16/100 [00:02<00:14,  5.96it/s]CETT extraction:  24%|██▍       | 24/100 [00:04<00:13,  5.83it/s]CETT extraction:  32%|███▏      | 32/100 [00:05<00:11,  6.17it/s]CETT extraction:  40%|████      | 40/100 [00:06<00:09,  6.34it/s]CETT extraction:  48%|████▊     | 48/100 [00:07<00:08,  6.49it/s]CETT extraction:  56%|█████▌    | 56/100 [00:08<00:06,  6.45it/s]CETT extraction:  64%|██████▍   | 64/100 [00:10<00:05,  6.55it/s]CETT extraction:  72%|███████▏  | 72/100 [00:11<00:04,  6.62it/s]CETT extraction:  80%|████████  | 80/100 [00:12<00:03,  6.64it/s]CETT extraction:  88%|████████▊ | 88/100 [00:13<00:01,  6.34it/s]CETT extraction:  96%|█████████▌| 96/100 [00:15<00:00,  6.45it/s]CETT extraction: 100%|██████████| 100/100 [00:15<00:00,  6.62it/s]
+[hprobes] Valid: 100  |  Accuracy: 0.950
+[hprobes] H-Neurons: 12  |  Ratio: 0.009‰
+[hprobes] Top layers: [(27, 3), (30, 2), (32, 2), (25, 1), (28, 1)]
+ done
+  H-Neurons:   12  (0.009‰ of all features)
+  Accuracy:    0.950
+  Layers:      {17: 1, 21: 1, 24: 1, 25: 1, 27: 3, 28: 1, 30: 2, 32: 2}
+
+  Scoring...
+[hprobes] AUROC: 1.000  |  Random: 1.000  |  Gap: +0.000
+  AUROC:           1.000
+  Random baseline: 1.000
+  AUROC gap:      +0.000
+  Balanced acc:    1.000
+
+  Causal validation (alpha → accuracy):
+    0.0 → 0.950  ← full suppression
+    0.5 → 0.950
+    1.0 → 0.950  ← baseline
+    1.5 → 0.950
+    2.0 → 0.950  ← amplification
+
+  Saved → /home/ubuntu/results/hprobes_experiments_basic_nudge/falseqa_h_neurons.json  +  falseqa_h_neurons.pkl
+────────────────────────────────────────────────────────────────────
+

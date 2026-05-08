@@ -1,0 +1,41 @@
+
+hprobes v0.5.4  |  model: google/medgemma-27b-text-it  |  samples: 500
+────────────────────────────────────────────────────────────────────
+  Dataset:     medical_faitheval.jsonl  (100 samples, format=medqa)
+  Keys:        options_key='options'  answer_key='answer_idx'
+  Contrastive: True
+  Nudge:       none
+  Loading google/medgemma-27b-text-it...Loading weights:   0%|          | 0/808 [00:00<?, ?it/s]Loading weights:   0%|          | 1/808 [00:00<03:21,  4.01it/s]Loading weights:   2%|▏         | 16/808 [00:00<00:14, 55.19it/s]Loading weights:   4%|▎         | 30/808 [00:00<00:09, 80.65it/s]Loading weights:   5%|▌         | 44/808 [00:00<00:07, 95.69it/s]Loading weights:   8%|▊         | 65/808 [00:00<00:05, 129.28it/s]Loading weights:  10%|█         | 81/808 [00:00<00:05, 132.35it/s]Loading weights:  12%|█▏        | 96/808 [00:00<00:05, 124.35it/s]Loading weights:  14%|█▍        | 116/808 [00:01<00:04, 144.80it/s]Loading weights:  16%|█▋        | 132/808 [00:01<00:04, 142.66it/s]Loading weights:  18%|█▊        | 147/808 [00:01<00:04, 140.16it/s]Loading weights:  20%|██        | 162/808 [00:01<00:04, 137.64it/s]Loading weights:  23%|██▎       | 183/808 [00:01<00:03, 157.08it/s]Loading weights:  25%|██▍       | 200/808 [00:01<00:04, 137.27it/s]Loading weights:  27%|██▋       | 219/808 [00:01<00:03, 150.44it/s]Loading weights:  29%|██▉       | 236/808 [00:01<00:03, 148.80it/s]Loading weights:  31%|███       | 252/808 [00:01<00:04, 138.48it/s]Loading weights:  34%|███▍      | 273/808 [00:02<00:03, 156.80it/s]Loading weights:  36%|███▌      | 290/808 [00:02<00:03, 140.37it/s]Loading weights:  38%|███▊      | 305/808 [00:02<00:03, 128.29it/s]Loading weights:  39%|███▉      | 319/808 [00:02<00:03, 128.77it/s]Loading weights:  41%|████      | 333/808 [00:02<00:03, 125.90it/s]Loading weights:  43%|████▎     | 346/808 [00:02<00:03, 121.13it/s]Loading weights:  44%|████▍     | 359/808 [00:02<00:03, 122.19it/s]Loading weights:  47%|████▋     | 377/808 [00:02<00:03, 136.78it/s]Loading weights:  48%|████▊     | 391/808 [00:03<00:03, 135.88it/s]Loading weights:  50%|█████     | 405/808 [00:03<00:03, 132.98it/s]Loading weights:  52%|█████▏    | 420/808 [00:03<00:02, 131.22it/s]Loading weights:  54%|█████▎    | 434/808 [00:03<00:03, 120.06it/s]Loading weights:  55%|█████▌    | 447/808 [00:03<00:03, 118.73it/s]Loading weights:  57%|█████▋    | 461/808 [00:03<00:02, 124.10it/s]Loading weights:  60%|█████▉    | 482/808 [00:03<00:02, 147.58it/s]Loading weights:  62%|██████▏   | 498/808 [00:03<00:02, 136.79it/s]Loading weights:  63%|██████▎   | 513/808 [00:03<00:02, 135.69it/s]Loading weights:  66%|██████▌   | 533/808 [00:04<00:01, 152.05it/s]Loading weights:  68%|██████▊   | 549/808 [00:04<00:01, 148.00it/s]Loading weights:  70%|██████▉   | 565/808 [00:04<00:01, 137.28it/s]Loading weights:  73%|███████▎  | 586/808 [00:04<00:01, 146.35it/s]Loading weights:  75%|███████▍  | 602/808 [00:04<00:01, 141.45it/s]Loading weights:  76%|███████▋  | 617/808 [00:04<00:01, 133.69it/s]Loading weights:  79%|███████▉  | 638/808 [00:04<00:01, 152.73it/s]Loading weights:  81%|████████  | 654/808 [00:04<00:01, 135.46it/s]Loading weights:  83%|████████▎ | 669/808 [00:05<00:01, 132.95it/s]Loading weights:  85%|████████▍ | 685/808 [00:05<00:00, 135.99it/s]Loading weights:  87%|████████▋ | 705/808 [00:05<00:00, 146.78it/s]Loading weights:  89%|████████▉ | 720/808 [00:05<00:00, 131.02it/s]Loading weights:  91%|█████████▏| 738/808 [00:05<00:00, 141.76it/s]Loading weights:  93%|█████████▎| 754/808 [00:05<00:00, 144.72it/s]Loading weights:  95%|█████████▌| 769/808 [00:05<00:00, 135.84it/s]Loading weights:  97%|█████████▋| 784/808 [00:05<00:00, 134.43it/s]Loading weights:  99%|█████████▉| 798/808 [00:06<00:00, 128.40it/s]Loading weights: 100%|██████████| 808/808 [00:06<00:00, 133.50it/s]
+ done
+  Fitting (l1_C=0.5)...[hprobes] Layers: 62  |  Features: 1,333,248  |  Top-K: 5,000
+CETT extraction:   0%|          | 0/100 [00:00<?, ?it/s]CETT extraction:   8%|▊         | 8/100 [00:01<00:20,  4.53it/s]CETT extraction:  16%|█▌        | 16/100 [00:03<00:17,  4.81it/s]CETT extraction:  24%|██▍       | 24/100 [00:04<00:15,  5.05it/s]CETT extraction:  32%|███▏      | 32/100 [00:06<00:12,  5.29it/s]CETT extraction:  40%|████      | 40/100 [00:07<00:11,  5.28it/s]CETT extraction:  48%|████▊     | 48/100 [00:09<00:09,  5.52it/s]CETT extraction:  56%|█████▌    | 56/100 [00:10<00:07,  5.58it/s]CETT extraction:  64%|██████▍   | 64/100 [00:11<00:06,  5.73it/s]CETT extraction:  72%|███████▏  | 72/100 [00:13<00:04,  5.73it/s]CETT extraction:  80%|████████  | 80/100 [00:14<00:03,  5.82it/s]CETT extraction:  88%|████████▊ | 88/100 [00:15<00:02,  5.80it/s]CETT extraction:  96%|█████████▌| 96/100 [00:17<00:00,  5.93it/s]CETT extraction: 100%|██████████| 100/100 [00:17<00:00,  5.81it/s]
+/home/ubuntu/hprobes/.venv/lib/python3.12/site-packages/sklearn/metrics/_classification.py:620: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/ubuntu/hprobes/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py:442: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
+  warnings.warn(
+/home/ubuntu/hprobes/.venv/lib/python3.12/site-packages/sklearn/metrics/_classification.py:620: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+[hprobes] Valid: 100  |  Accuracy: 0.980
+[hprobes] H-Neurons: 26  |  Ratio: 0.020‰
+[hprobes] Top layers: [(0, 4), (20, 2), (16, 2), (5, 2), (11, 2)]
+ done
+  H-Neurons:   26  (0.020‰ of all features)
+  Accuracy:    0.980
+  Layers:      {0: 4, 1: 1, 3: 1, 4: 1, 5: 2, 6: 1, 9: 1, 11: 2, 15: 1, 16: 2, 18: 1, 19: 1, 20: 2, 21: 1, 22: 1, 36: 1, 41: 1, 46: 1, 56: 1}
+
+  Scoring...
+  AUROC:           n/a
+  Random baseline: nan
+  AUROC gap:       n/a
+  Balanced acc:    1.000
+
+  Causal validation (alpha → accuracy):
+    0.0 → 1.000  ← full suppression
+    0.5 → 1.000
+    1.0 → 1.000  ← baseline
+    1.5 → 1.000
+    2.0 → 0.950  ← amplification
+
+  Saved → /home/ubuntu/results/hprobes_experiments_baseline_fixed/faitheval_h_neurons.json  +  faitheval_h_neurons.pkl
+────────────────────────────────────────────────────────────────────
+
