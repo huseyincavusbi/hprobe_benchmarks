@@ -1,0 +1,125 @@
+{
+  "saved_at": "2026-05-19T14:52:07.162189+00:00",
+  "model": "microsoft/MediPhi-Instruct",
+  "dataset": "medbullets.jsonl",
+  "n_samples": 616,
+  "fit": {
+    "n_h_neurons": 4,
+    "neuron_ratio_permille": 0.0152587890625,
+    "accuracy": 0.461038961038961,
+    "layer_distribution": {
+      "21": 1,
+      "27": 1,
+      "25": 1,
+      "28": 1
+    },
+    "h_neurons": [
+      [
+        21,
+        1201
+      ],
+      [
+        27,
+        3028
+      ],
+      [
+        25,
+        2574
+      ],
+      [
+        28,
+        3947
+      ]
+    ]
+  },
+  "metadata": {
+    "model_name": "microsoft/MediPhi-Instruct",
+    "n_layers": 32,
+    "intermediate_dim": 8192,
+    "total_features": 262144
+  },
+  "score": {
+    "auroc": 0.6496465043205029,
+    "balanced_accuracy": 0.586279130662477,
+    "random_baseline_auroc": 0.5,
+    "random_baseline_balanced_accuracy": 0.5,
+    "auroc_gap": 0.14964650432050286,
+    "n_h_neurons": 4,
+    "neuron_ratio_permille": 0.0152587890625,
+    "threshold": 0.5533977936311103
+  },
+  "causal_validation": {
+    "0.0": 0.4435483870967742,
+    "0.5": 0.4435483870967742,
+    "1.0": 0.4596774193548387,
+    "1.5": 0.45161290322580644,
+    "2.0": 0.43548387096774194
+  },
+  "config": {
+    "h_neurons": [
+      [
+        21,
+        1201
+      ],
+      [
+        27,
+        3028
+      ],
+      [
+        25,
+        2574
+      ],
+      [
+        28,
+        3947
+      ]
+    ],
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "intermediate_dim": 8192,
+    "n_features": 262144,
+    "l1_C": 1.0,
+    "layer_stride": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "answer_cue": "\n\nAnswer:",
+    "threshold": 0.5533977936311103,
+    "n_consistency": 1,
+    "clf_classes": [
+      0,
+      1
+    ]
+  }
+}

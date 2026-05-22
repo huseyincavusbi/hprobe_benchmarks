@@ -1,0 +1,127 @@
+{
+  "saved_at": "2026-05-19T14:56:49.238391+00:00",
+  "model": "google/gemma-3-4b-it",
+  "dataset": "medbullets.jsonl",
+  "n_samples": 616,
+  "fit": {
+    "n_h_neurons": 4,
+    "neuron_ratio_permille": 0.011488970588235293,
+    "accuracy": 0.38636363636363635,
+    "layer_distribution": {
+      "25": 1,
+      "24": 1,
+      "31": 1,
+      "17": 1
+    },
+    "h_neurons": [
+      [
+        25,
+        3877
+      ],
+      [
+        24,
+        1421
+      ],
+      [
+        31,
+        8060
+      ],
+      [
+        17,
+        9164
+      ]
+    ]
+  },
+  "metadata": {
+    "model_name": "google/gemma-3-4b-it",
+    "n_layers": 34,
+    "intermediate_dim": 10240,
+    "total_features": 348160
+  },
+  "score": {
+    "auroc": 0.6014254385964911,
+    "balanced_accuracy": 0.5350877192982456,
+    "random_baseline_auroc": 0.5,
+    "random_baseline_balanced_accuracy": 0.5,
+    "auroc_gap": 0.10142543859649111,
+    "n_h_neurons": 4,
+    "neuron_ratio_permille": 0.011488970588235293,
+    "threshold": 0.6378347453869952
+  },
+  "causal_validation": {
+    "0.0": 0.3870967741935484,
+    "0.5": 0.3951612903225806,
+    "1.0": 0.3870967741935484,
+    "1.5": 0.3790322580645161,
+    "2.0": 0.3870967741935484
+  },
+  "config": {
+    "h_neurons": [
+      [
+        25,
+        3877
+      ],
+      [
+        24,
+        1421
+      ],
+      [
+        31,
+        8060
+      ],
+      [
+        17,
+        9164
+      ]
+    ],
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "intermediate_dim": 10240,
+    "n_features": 348160,
+    "l1_C": 1.0,
+    "layer_stride": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "answer_cue": "\n\nAnswer:",
+    "threshold": 0.6378347453869952,
+    "n_consistency": 1,
+    "clf_classes": [
+      0,
+      1
+    ]
+  }
+}
