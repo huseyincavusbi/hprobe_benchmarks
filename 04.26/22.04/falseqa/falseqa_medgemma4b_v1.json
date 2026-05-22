@@ -1,0 +1,169 @@
+{
+  "saved_at": "2026-04-22T18:31:51.038783+00:00",
+  "model": "google/medgemma-4b-it",
+  "dataset": "medical_falseqa.jsonl",
+  "n_samples": 100,
+  "fit": {
+    "n_h_neurons": 9,
+    "neuron_ratio_permille": 0.02585018382352941,
+    "accuracy": 0.8,
+    "layer_distribution": {
+      "16": 1,
+      "12": 3,
+      "15": 2,
+      "23": 1,
+      "11": 1,
+      "14": 1
+    },
+    "h_neurons": [
+      [
+        16,
+        1495
+      ],
+      [
+        12,
+        1751
+      ],
+      [
+        15,
+        2162
+      ],
+      [
+        23,
+        7306
+      ],
+      [
+        12,
+        9393
+      ],
+      [
+        15,
+        4257
+      ],
+      [
+        12,
+        7750
+      ],
+      [
+        11,
+        6334
+      ],
+      [
+        14,
+        8858
+      ]
+    ]
+  },
+  "metadata": {
+    "model_name": "google/medgemma-4b-it",
+    "n_layers": 34,
+    "intermediate_dim": 10240,
+    "total_features": 348160
+  },
+  "score": {
+    "auroc": 1.0,
+    "balanced_accuracy": 1.0,
+    "random_baseline_auroc": 0.9342105263157895,
+    "random_baseline_balanced_accuracy": 0.8157894736842105,
+    "auroc_gap": 0.06578947368421051,
+    "n_h_neurons": 9,
+    "neuron_ratio_permille": 0.02585018382352941,
+    "threshold": 0.9649645648501126
+  },
+  "causal_validation": {
+    "0.0": 0.8,
+    "0.5": 0.8,
+    "1.0": 0.8,
+    "1.5": 0.8,
+    "2.0": 0.8
+  },
+  "config": {
+    "h_neurons": [
+      [
+        16,
+        1495
+      ],
+      [
+        12,
+        1751
+      ],
+      [
+        15,
+        2162
+      ],
+      [
+        23,
+        7306
+      ],
+      [
+        12,
+        9393
+      ],
+      [
+        15,
+        4257
+      ],
+      [
+        12,
+        7750
+      ],
+      [
+        11,
+        6334
+      ],
+      [
+        14,
+        8858
+      ]
+    ],
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "intermediate_dim": 10240,
+    "n_features": 348160,
+    "l1_C": 0.5,
+    "layer_stride": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "answer_cue": "\n\nAnswer:",
+    "threshold": 0.9649645648501126,
+    "n_consistency": 1,
+    "clf_classes": [
+      0,
+      1
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "saved_at": "2026-04-22T18:16:42.447748+00:00",
+  "model": "google/medgemma-1.5-4b-it",
+  "dataset": "medical_faitheval.jsonl",
+  "n_samples": 100,
+  "fit": {
+    "n_h_neurons": 3,
+    "neuron_ratio_permille": 0.008616727941176471,
+    "accuracy": 0.92,
+    "layer_distribution": {
+      "0": 2,
+      "11": 1
+    },
+    "h_neurons": [
+      [
+        0,
+        7686
+      ],
+      [
+        11,
+        1029
+      ],
+      [
+        0,
+        9893
+      ]
+    ]
+  },
+  "metadata": {
+    "model_name": "google/medgemma-1.5-4b-it",
+    "n_layers": 34,
+    "intermediate_dim": 10240,
+    "total_features": 348160
+  },
+  "score": {
+    "auroc": 1.0,
+    "balanced_accuracy": 0.9935897435897436,
+    "random_baseline_auroc": 0.8397435897435898,
+    "random_baseline_balanced_accuracy": 0.8846153846153846,
+    "auroc_gap": 0.16025641025641024,
+    "n_h_neurons": 3,
+    "neuron_ratio_permille": 0.008616727941176471,
+    "threshold": 0.993697182883678
+  },
+  "causal_validation": {
+    "0.0": 0.95,
+    "0.5": 0.9,
+    "1.0": 0.9,
+    "1.5": 0.9,
+    "2.0": 0.9
+  },
+  "config": {
+    "h_neurons": [
+      [
+        0,
+        7686
+      ],
+      [
+        11,
+        1029
+      ],
+      [
+        0,
+        9893
+      ]
+    ],
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "intermediate_dim": 10240,
+    "n_features": 348160,
+    "l1_C": 0.5,
+    "layer_stride": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "answer_cue": "\n\nAnswer:",
+    "threshold": 0.993697182883678,
+    "n_consistency": 1,
+    "clf_classes": [
+      0,
+      1
+    ]
+  }
+}
