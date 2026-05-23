@@ -1,0 +1,28 @@
+  Command:     hprobes run --model google/gemma-3-4b-it --data /home/admina/cot/hprobes_data/nq_open/train.parquet --samples 2000 --gen-batch-size 8 --l1-c 1 --top-k 5000 --consistency-samples 10 --output /home/admina/cot/hprobes_benchmarks/05.26/open_ended/nqopen_2k_c1
+  Mode:        open-ended (consistency)
+  Dataset:     train.parquet  (2000 samples)
+  Loading google/gemma-3-4b-it... done
+  Faithful:  351 samples → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/nqopen_2k_c1.faithful.responses.jsonl
+  Hallucinatory:  1198 samples → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/nqopen_2k_c1.hallucinatory.responses.jsonl
+  Mixed:  451 samples → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/nqopen_2k_c1.mixed.responses.jsonl
+  Balanced: 351 faithful + 351 hallucinatory = 702 total
+  Consistent:  702 samples after filtering
+  Fitting (l1_C=1.0)...[hprobes] Layers: 34  |  Features: 348,160  |  Mode: H-Neuron (dual-span)
+[hprobes] Valid: 702  |  Accuracy: 0.500
+[hprobes] H-Neurons: 3  |  Ratio: 0.009‰
+[hprobes] Top layers: [(6, 1), (26, 1), (14, 1)]
+ done
+  H-Neurons:   3  (0.009‰ of all features)
+  Accuracy:    0.500
+  Layers:      {6: 1, 14: 1, 26: 1}
+
+  Scoring...
+[hprobes] AUROC: 0.690  |  Random: 0.358  |  Gap: +0.332
+  AUROC:           0.690
+  Random baseline: 0.358
+  AUROC gap:      +0.332
+  Balanced acc:    0.647
+
+  Causal validation skipped (open-ended; use behavioral benchmarks)
+
+  Saved → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/nqopen_2k_c1.json  +  nqopen_2k_c1.pkl
