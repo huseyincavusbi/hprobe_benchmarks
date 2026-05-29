@@ -1,0 +1,16 @@
+  Command:     hprobes transfer --probe /home/admina/cot/hprobes_benchmarks/05.26/open_ended/triviaqa_2k_c1 --model google/gemma-3-4b-it --data /home/admina/cot/hprobes_data/bioasq/train.parquet --samples 2000 --gen-batch-size 8 --consistency-samples 10 --output /home/admina/cot/hprobes_benchmarks/05.26/open_ended/transfer_tqa_to_bioasq_2k
+  Mode:     open-ended transfer (consistency)
+  Faithful:  614 samples → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/transfer_tqa_to_bioasq_2k.faithful.responses.jsonl
+  Hallucinatory:  938 samples → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/transfer_tqa_to_bioasq_2k.hallucinatory.responses.jsonl
+  Mixed:  448 samples → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/transfer_tqa_to_bioasq_2k.mixed.responses.jsonl
+  Balanced: 614 faithful + 614 hallucinatory = 1228 total
+  Consistent:  1228 samples after filtering
+
+  Scoring (transfer)...
+[hprobes transfer] AUROC: 0.848  |  Random: 0.500  |  Gap: +0.348
+  AUROC:           0.848
+  Random baseline: 0.500
+  AUROC gap:      +0.348
+  Balanced acc:    0.775
+
+  Saved → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/transfer_tqa_to_bioasq_2k.json  +  transfer_tqa_to_bioasq_2k.pkl

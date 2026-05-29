@@ -1,0 +1,129 @@
+{
+  "saved_at": "2026-05-23T13:51:31.519053+00:00",
+  "model": "google/gemma-3-4b-it",
+  "dataset": "train.parquet",
+  "n_samples": 1134,
+  "fit": {
+    "n_h_neurons": 5,
+    "neuron_ratio_permille": 0.014361213235294117,
+    "accuracy": 0.5,
+    "layer_distribution": {
+      "30": 1,
+      "28": 1,
+      "27": 1,
+      "16": 1,
+      "14": 1
+    },
+    "h_neurons": [
+      [
+        30,
+        1130
+      ],
+      [
+        28,
+        9989
+      ],
+      [
+        27,
+        8282
+      ],
+      [
+        16,
+        4146
+      ],
+      [
+        14,
+        1027
+      ]
+    ]
+  },
+  "metadata": {
+    "model_name": "google/gemma-3-4b-it",
+    "n_layers": 34,
+    "intermediate_dim": 10240,
+    "total_features": 348160
+  },
+  "score": {
+    "auroc": 0.74033535165347,
+    "balanced_accuracy": 0.6696941468716038,
+    "random_baseline_auroc": 0.5864772550846141,
+    "random_baseline_balanced_accuracy": 0.5,
+    "auroc_gap": 0.15385809656885585,
+    "n_h_neurons": 5,
+    "neuron_ratio_permille": 0.014361213235294117,
+    "threshold": 0.5229120417217086
+  },
+  "config": {
+    "h_neurons": [
+      [
+        30,
+        1130
+      ],
+      [
+        28,
+        9989
+      ],
+      [
+        27,
+        8282
+      ],
+      [
+        16,
+        4146
+      ],
+      [
+        14,
+        1027
+      ]
+    ],
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "intermediate_dim": 10240,
+    "n_features": 348160,
+    "l1_C": 1.0,
+    "layer_stride": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "answer_cue": "",
+    "threshold": 0.5229120417217086,
+    "n_consistency": 1,
+    "clf_classes": [
+      0,
+      1
+    ]
+  }
+}
