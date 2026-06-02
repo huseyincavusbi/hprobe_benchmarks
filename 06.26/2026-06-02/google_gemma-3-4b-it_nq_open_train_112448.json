@@ -1,0 +1,159 @@
+{
+  "saved_at": "2026-06-02T11:34:46.966745+00:00",
+  "model": "google/gemma-3-4b-it",
+  "dataset": "nq_open_train.parquet",
+  "n_samples": 616,
+  "fit": {
+    "n_h_neurons": 4,
+    "neuron_ratio_permille": 0.011488970588235293,
+    "accuracy": 0.5,
+    "layer_distribution": {
+      "6": 2,
+      "15": 1,
+      "26": 1
+    },
+    "h_neurons": [
+      [
+        6,
+        4063
+      ],
+      [
+        6,
+        4876
+      ],
+      [
+        15,
+        2689
+      ],
+      [
+        26,
+        3593
+      ]
+    ]
+  },
+  "metadata": {
+    "model_name": "google/gemma-3-4b-it",
+    "n_layers": 34,
+    "intermediate_dim": 10240,
+    "total_features": 348160
+  },
+  "score": {
+    "auroc": 0.6277315296566076,
+    "balanced_accuracy": 0.6290322580645161,
+    "random_baseline_auroc": 0.5,
+    "random_baseline_balanced_accuracy": 0.5,
+    "auroc_gap": 0.1277315296566076,
+    "n_h_neurons": 4,
+    "neuron_ratio_permille": 0.011488970588235293,
+    "threshold": 0.492166657082949
+  },
+  "l2_check": {
+    "n_l1_neurons": 4,
+    "l2_overlap_count": 0,
+    "l2_overlap_ratio": 0.0,
+    "l2_weight_concentration": 0.00085400789672299,
+    "l2_auroc": 0.9879150417520435,
+    "l2_top_indices": [
+      348159,
+      348157,
+      348158,
+      348155
+    ],
+    "interpretation": "L1 neurons not dominant in L2 \u2014 possible collinearity with other features"
+  },
+  "stability": {
+    "n_runs": 5,
+    "neurons_per_run": [
+      3,
+      3,
+      4,
+      6,
+      3
+    ],
+    "neurons_consistent_all_runs": 1,
+    "jaccard_min": 0.2,
+    "jaccard_max": 0.75,
+    "jaccard_mean": 0.4488095238095238,
+    "interpretation": "H-Neurons unstable across bootstrap runs \u2014 possible sensitivity to data composition"
+  },
+  "correlation": {
+    "max_correlations": [
+      0.9133,
+      0.9142,
+      0.927,
+      0.8832
+    ],
+    "n_neurons": 4,
+    "n_high_correlation": 4,
+    "interpretation": "4/4 H-Neurons have high max correlation \u2014 from correlated clusters"
+  },
+  "config": {
+    "h_neurons": [
+      [
+        6,
+        4063
+      ],
+      [
+        6,
+        4876
+      ],
+      [
+        15,
+        2689
+      ],
+      [
+        26,
+        3593
+      ]
+    ],
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "intermediate_dim": 10240,
+    "n_features": 348160,
+    "l1_C": 1.0,
+    "layer_stride": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "answer_cue": "",
+    "threshold": 0.492166657082949,
+    "n_consistency": 1,
+    "clf_classes": [
+      0,
+      1
+    ]
+  }
+}

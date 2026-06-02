@@ -1,0 +1,36 @@
+  Command:     hprobes run --model google/gemma-3-4b-it --data data/triviaqa_train.parquet --samples 2000 --gen-batch-size 96 --batch-size 256 --l1-c 1 --top-k 0 --l2 --stability --correlation --random-baseline --consistency-samples 10 --max-new-tokens 40
+  Mode:        open-ended (consistency)
+  Dataset:     triviaqa_train.parquet  (2000 samples)
+  Loading google/gemma-3-4b-it... done
+  Faithful:  529 samples → results/2026-06-02/google_gemma-3-4b-it_triviaqa_train_103042.faithful.responses.jsonl
+  Hallucinatory:  952 samples → results/2026-06-02/google_gemma-3-4b-it_triviaqa_train_103042.hallucinatory.responses.jsonl
+  Mixed:  519 samples → results/2026-06-02/google_gemma-3-4b-it_triviaqa_train_103042.mixed.responses.jsonl
+  Balanced: 529 faithful + 529 hallucinatory = 1058 total
+  Consistent:  1058 samples after filtering
+  Fitting (l1_C=1.0)...[hprobes] Layers: 34  |  Features: 348,160  |  Mode: H-Neuron (dual-span)
+[hprobes] Valid: 1058  |  Accuracy: 0.500
+[hprobes] H-Neurons: 10  |  Ratio: 0.029‰
+[hprobes] Top layers: [(16, 2), (29, 1), (28, 1), (31, 1), (27, 1)]
+ done
+  H-Neurons:   10  (0.029‰ of all features)
+  Accuracy:    0.500
+  Layers:      {14: 1, 16: 2, 19: 1, 25: 1, 26: 1, 27: 1, 28: 1, 29: 1, 31: 1}
+
+  Scoring...
+[hprobes] AUROC: 0.820  |  Random: 0.417  |  Gap: +0.404
+  AUROC:           0.820
+  Random baseline: 0.417
+  AUROC gap:      +0.404
+  Balanced acc:    0.731
+
+  Causal validation (α → correctness rate):
+    α=0.0 → 0.400  ← suppression
+    α=1.0 → 0.450  ← baseline
+    α=2.0 → 0.450  ← amplification
+
+  Random baseline (10 random neurons):
+    α=0.0 → 0.440
+    α=1.0 → 0.440
+    α=2.0 → 0.440
+
+  Saved → results/2026-06-02/google_gemma-3-4b-it_triviaqa_train_103042.json  +  google_gemma-3-4b-it_triviaqa_train_103042.pkl
