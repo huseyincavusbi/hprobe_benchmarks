@@ -22,9 +22,9 @@
 | Gemma 3 4B | BioASQ | 8 | 0.023 | 0.974 | +0.474 | 0.916 |
 | Gemma 3 4B | NQ-Open | 4 | 0.011 | 0.628 | +0.128 | 0.629 |
 | MedGemma 4B | TriviaQA* | 3 | 0.009 | 0.726 | +0.185 | 0.653 |
-
-*MedGemma TriviaQA used top-k=5000 (not 0). All other runs use top-k=0.
 | MedGemma 4B | BioASQ | 7 | 0.020 | 0.955 | +0.455 | 0.885 |
+
+*\*MedGemma TriviaQA used top-k=5000 (not 0). All other runs use top-k=0.*
 
 ## Causal Validation (n=500 samples × 5 seeds, mean ± SE)
 
@@ -88,7 +88,7 @@ Max Pearson r between each H-Neuron and any other feature in the training data.
 | Gemma BioASQ | 8/8 | All from correlated clusters |
 | Gemma NQ-Open | 4/4 | All from correlated clusters |
 
-## Met	hodological Validation Summary
+## Methodological Validation Summary
 
 | Check | Purpose | Finding |
 |-------|---------|---------|
