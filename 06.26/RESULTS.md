@@ -21,10 +21,9 @@
 | Gemma 3 4B | TriviaQA | 10 | 0.029 | 0.820 | +0.404 | 0.731 |
 | Gemma 3 4B | BioASQ | 8 | 0.023 | 0.974 | +0.474 | 0.916 |
 | Gemma 3 4B | NQ-Open | 4 | 0.011 | 0.628 | +0.128 | 0.629 |
-| MedGemma 4B | TriviaQA* | 3 | 0.009 | 0.726 | +0.185 | 0.653 |
+| MedGemma 4B | TriviaQA | 4 | 0.011 | 0.735 | +0.235 | 0.658 |
 | MedGemma 4B | BioASQ | 7 | 0.020 | 0.955 | +0.455 | 0.885 |
-
-*\*MedGemma TriviaQA used top-k=5000 (not 0). All other runs use top-k=0.*
+| MedGemma 4B | NQ-Open | 2 | 0.006 | 0.612 | +0.112 | 0.532 |
 
 ## Causal Validation (n=500 samples × 5 seeds, mean ± SE)
 
@@ -47,6 +46,17 @@
 **Shared neurons (TQA∩BioASQ):** (L16,N4146), (L25,N3877), (L27,N8282), (L28,N9989)
 
 **Shared neuron (TQA∩NQ-Open):** (L26,N3593)
+
+## Cross-Dataset Overlap (MedGemma 4B, same model)
+
+| Comparison | Shared | Jaccard | Interpretation |
+|------------|--------|---------|----------------|
+| BioASQ ∩ TriviaQA | 1 | 0.100 | |
+| BioASQ ∩ NQ-Open | 1 | 0.125 | |
+| TriviaQA ∩ NQ-Open | 1 | 0.200 | |
+| **All three ∩** | **0** | — | **No universal H-Neuron** |
+
+**Shared neurons:** (L26,N3593) between BioASQ and NQ-Open, (L27,N8282) between NQ-Open and TriviaQA, (L29,N5754) between BioASQ and TriviaQA.
 
 ## Cross-Model Overlap (Gemma 4B × TQA vs MedGemma 4B × BioASQ)
 
