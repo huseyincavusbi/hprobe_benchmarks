@@ -21,7 +21,9 @@
 | Gemma 3 4B | TriviaQA | 10 | 0.029 | 0.820 | +0.404 | 0.731 |
 | Gemma 3 4B | BioASQ | 8 | 0.023 | 0.974 | +0.474 | 0.916 |
 | Gemma 3 4B | NQ-Open | 4 | 0.011 | 0.628 | +0.128 | 0.629 |
-| MedGemma 4B | TriviaQA | 3 | 0.009 | 0.726 | +0.185 | 0.653 |
+| MedGemma 4B | TriviaQA* | 3 | 0.009 | 0.726 | +0.185 | 0.653 |
+
+*MedGemma TriviaQA used top-k=5000 (not 0). All other runs use top-k=0.
 | MedGemma 4B | BioASQ | 7 | 0.020 | 0.955 | +0.455 | 0.885 |
 
 ## Causal Validation (n=500 samples × 5 seeds, mean ± SE)
@@ -109,4 +111,4 @@ Max Pearson r between each H-Neuron and any other feature in the training data.
 
 5. **Selection is moderately stable.** Bootstrap Jaccard 0.45–0.69. L1 picks depend somewhat on data composition.
 
-6. **Fewer H-Neurons than original paper.** 4–10 vs paper's ~35. Our stricter response-level labeling produces fewer, cleaner candidates.
+6. **Fewer H-Neurons than original paper.** 3–10 vs paper's ~35. Our stricter response-level labeling produces fewer, cleaner candidates.
