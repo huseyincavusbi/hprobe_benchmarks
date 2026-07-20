@@ -1,0 +1,137 @@
+{
+  "saved_at": "2026-06-04T11:57:00.823575+00:00",
+  "model": "google/medgemma-27b-text-it",
+  "dataset": "google_medgemma-27b-text-it_train_110543.mixed.responses.jsonl",
+  "n_samples": 448,
+  "fit": {
+    "n_h_neurons": 2,
+    "neuron_ratio_permille": 0.0015000960061443932,
+    "accuracy": 0.0,
+    "layer_distribution": {
+      "9": 1,
+      "11": 1
+    },
+    "h_neurons": [
+      [
+        9,
+        21380
+      ],
+      [
+        11,
+        5112
+      ]
+    ]
+  },
+  "metadata": {
+    "model_name": "google/medgemma-27b-text-it",
+    "n_layers": 62,
+    "intermediate_dim": 21504,
+    "total_features": 1333248
+  },
+  "score": {
+    "auroc": NaN,
+    "balanced_accuracy": 1.0,
+    "random_baseline_auroc": NaN,
+    "random_baseline_balanced_accuracy": 1.0,
+    "auroc_gap": NaN,
+    "n_h_neurons": 2,
+    "neuron_ratio_permille": 0.0015000960061443932,
+    "threshold": 0.5
+  },
+  "causal_validation": {
+    "0.0": 0.0,
+    "0.5": 0.0,
+    "1.0": 0.0,
+    "1.5": 0.0,
+    "2.0": 0.0
+  },
+  "config": {
+    "h_neurons": [
+      [
+        9,
+        21380
+      ],
+      [
+        11,
+        5112
+      ]
+    ],
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+    ],
+    "intermediate_dim": 21504,
+    "n_features": 1333248,
+    "l1_C": 1.0,
+    "layer_stride": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "answer_cue": "",
+    "threshold": 0.5,
+    "n_consistency": 1,
+    "clf_classes": [
+      0,
+      1
+    ]
+  }
+}

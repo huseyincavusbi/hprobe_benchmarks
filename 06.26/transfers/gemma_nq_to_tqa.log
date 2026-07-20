@@ -1,0 +1,16 @@
+  Command:     hprobes transfer --probe /home/ubuntu/results/2026-06-06/google_gemma-3-4b-it_train_105451 --model google/gemma-3-4b-it --data /home/ubuntu/hprobes_data/triviaqa/train.parquet --samples 2000 --batch-size 256 --gen-batch-size 128 --consistency-samples 10 --output /home/ubuntu/results/transfers/gemma_nq_to_tqa
+  Mode:     open-ended transfer (consistency)
+  Faithful:  531 samples → /home/ubuntu/results/transfers/gemma_nq_to_tqa.faithful.responses.jsonl
+  Hallucinatory:  911 samples → /home/ubuntu/results/transfers/gemma_nq_to_tqa.hallucinatory.responses.jsonl
+  Mixed:  558 samples → /home/ubuntu/results/transfers/gemma_nq_to_tqa.mixed.responses.jsonl
+  Balanced: 531 faithful + 531 hallucinatory = 1062 total
+  Consistent:  1062 samples after filtering
+
+  Scoring (transfer)...
+[hprobes transfer] AUROC: 0.684  |  Random: 0.500  |  Gap: +0.184
+  AUROC:           0.684
+  Random baseline: 0.500
+  AUROC gap:      +0.184
+  Balanced acc:    0.622
+
+  Saved → /home/ubuntu/results/transfers/gemma_nq_to_tqa.json  +  gemma_nq_to_tqa.pkl

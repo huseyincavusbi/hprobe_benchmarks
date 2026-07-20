@@ -1,0 +1,177 @@
+{
+  "saved_at": "2026-06-03T21:54:00.213996+00:00",
+  "model": "google/medgemma-1.5-4b-it",
+  "dataset": "train.parquet",
+  "n_samples": 1038,
+  "fit": {
+    "n_h_neurons": 2,
+    "neuron_ratio_permille": 0.005744485294117647,
+    "accuracy": 0.5,
+    "layer_distribution": {
+      "18": 1,
+      "16": 1
+    },
+    "h_neurons": [
+      [
+        18,
+        4425
+      ],
+      [
+        16,
+        4146
+      ]
+    ]
+  },
+  "metadata": {
+    "model_name": "google/medgemma-1.5-4b-it",
+    "n_layers": 34,
+    "intermediate_dim": 10240,
+    "total_features": 348160
+  },
+  "score": {
+    "auroc": 0.9552514792899408,
+    "balanced_accuracy": 0.8798076923076923,
+    "random_baseline_auroc": 0.709689349112426,
+    "random_baseline_balanced_accuracy": 0.5,
+    "auroc_gap": 0.24556213017751483,
+    "n_h_neurons": 2,
+    "neuron_ratio_permille": 0.005744485294117647,
+    "threshold": 0.5982770995061587
+  },
+  "causal_validation": {
+    "h_neurons": {
+      "0.0": {
+        "mean": 0.5,
+        "se": 0.0,
+        "rates": [
+          0.5
+        ]
+      },
+      "1.0": {
+        "mean": 0.5,
+        "se": 0.0,
+        "rates": [
+          0.5
+        ]
+      },
+      "2.0": {
+        "mean": 0.495,
+        "se": 0.0,
+        "rates": [
+          0.495
+        ]
+      }
+    },
+    "n_samples": 200,
+    "n_seeds": 1,
+    "mcnemar_suppress_vs_baseline": {
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "b": 3,
+      "c": 3,
+      "n_discordant": 6
+    },
+    "random_baseline": {
+      "0.0": 0.51,
+      "1.0": 0.51,
+      "2.0": 0.505
+    }
+  },
+  "l2_check": {
+    "n_l1_neurons": 2,
+    "l2_overlap_count": 0,
+    "l2_overlap_ratio": 0.0,
+    "l2_weight_concentration": 0.005323635917721633,
+    "l2_auroc": 0.9981942226738278,
+    "l2_top_indices": [
+      4999,
+      4996
+    ],
+    "interpretation": "L1 neurons not dominant in L2 \u2014 possible collinearity with other features"
+  },
+  "stability": {
+    "n_runs": 5,
+    "neurons_per_run": [
+      5,
+      3,
+      6,
+      2,
+      3
+    ],
+    "neurons_consistent_all_runs": 2,
+    "jaccard_min": 0.3333333333333333,
+    "jaccard_max": 0.8333333333333334,
+    "jaccard_mean": 0.56,
+    "interpretation": "H-Neurons unstable across bootstrap runs \u2014 possible sensitivity to data composition"
+  },
+  "correlation": {
+    "max_correlations": [
+      0.7284,
+      0.6501
+    ],
+    "n_neurons": 2,
+    "n_high_correlation": 1,
+    "interpretation": "1/2 H-Neurons have high max correlation \u2014 from correlated clusters"
+  },
+  "config": {
+    "h_neurons": [
+      [
+        18,
+        4425
+      ],
+      [
+        16,
+        4146
+      ]
+    ],
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "intermediate_dim": 10240,
+    "n_features": 348160,
+    "l1_C": 1.0,
+    "layer_stride": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "answer_cue": "",
+    "threshold": 0.5982770995061587,
+    "n_consistency": 1,
+    "clf_classes": [
+      0,
+      1
+    ]
+  }
+}

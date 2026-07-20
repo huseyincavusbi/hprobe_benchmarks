@@ -1,0 +1,4 @@
+  Command:     hprobes run --model google/gemma-3-27b-it --data /home/ubuntu/hprobes_data/triviaqa/train.parquet --samples 2000 --l1-c 1 --top-k 0 --batch-size 8 --gen-batch-size 4 --consistency-samples 10 --device cuda --l2 --stability --correlation --causal-samples 500 --causal-seeds 5 --random-baseline
+  Mode:        open-ended (consistency)
+  Dataset:     train.parquet  (2000 samples)
+  Loading google/gemma-3-27b-it... done

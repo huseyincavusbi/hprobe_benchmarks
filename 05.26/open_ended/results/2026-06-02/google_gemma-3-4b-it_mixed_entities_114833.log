@@ -1,0 +1,9 @@
+  Command:     hprobes run --model google/gemma-3-4b-it --data data/non_exist/mixed_entities.parquet --samples 1000 --gen-batch-size 96 --batch-size 256 --l1-c 0.01 --top-k 0 --judge refusal --l2 --stability --correlation --consistency-samples 10 --max-new-tokens 40
+  Mode:        open-ended (consistency)
+  Dataset:     mixed_entities.parquet  (1000 samples)
+  Loading google/gemma-3-4b-it... done
+  Hallucinatory:  947 samples → results/2026-06-02/google_gemma-3-4b-it_mixed_entities_114833.hallucinatory.responses.jsonl
+  Mixed:  53 samples → results/2026-06-02/google_gemma-3-4b-it_mixed_entities_114833.mixed.responses.jsonl
+  Warning: No consistent samples (faithful=0, hallucinatory=947)
+  Consistent:  0 samples after filtering
+  Error: no consistent samples — try more input samples or lower l1_C

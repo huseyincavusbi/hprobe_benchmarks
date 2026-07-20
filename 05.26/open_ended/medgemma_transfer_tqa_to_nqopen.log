@@ -1,0 +1,16 @@
+  Command:     hprobes transfer --probe /home/admina/cot/hprobes_benchmarks/05.26/open_ended/medgemma_triviaqa_2k_c1 --model google/medgemma-1.5-4b-it --data /home/admina/cot/hprobes_data/nq_open/train.parquet --samples 2000 --gen-batch-size 8 --consistency-samples 10 --max-new-tokens 40 --output /home/admina/cot/hprobes_benchmarks/05.26/open_ended/medgemma_transfer_tqa_to_nqopen
+  Mode:     open-ended transfer (consistency)
+  Faithful:  188 samples → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/medgemma_transfer_tqa_to_nqopen.faithful.responses.jsonl
+  Hallucinatory:  1193 samples → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/medgemma_transfer_tqa_to_nqopen.hallucinatory.responses.jsonl
+  Mixed:  619 samples → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/medgemma_transfer_tqa_to_nqopen.mixed.responses.jsonl
+  Balanced: 188 faithful + 188 hallucinatory = 376 total
+  Consistent:  376 samples after filtering
+
+  Scoring (transfer)...
+[hprobes transfer] AUROC: 0.671  |  Random: 0.500  |  Gap: +0.171
+  AUROC:           0.671
+  Random baseline: 0.500
+  AUROC gap:      +0.171
+  Balanced acc:    0.606
+
+  Saved → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/medgemma_transfer_tqa_to_nqopen.json  +  medgemma_transfer_tqa_to_nqopen.pkl

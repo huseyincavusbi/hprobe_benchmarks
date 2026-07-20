@@ -1,0 +1,182 @@
+{
+  "saved_at": "2026-05-31T12:35:26.876152+00:00",
+  "model": "google/medgemma-1.5-4b-it",
+  "dataset": "train.parquet",
+  "n_samples": 1038,
+  "fit": {
+    "n_h_neurons": 6,
+    "neuron_ratio_permille": 0.017233455882352942,
+    "accuracy": 0.5,
+    "layer_distribution": {
+      "18": 1,
+      "6": 1,
+      "5": 1,
+      "16": 1,
+      "29": 1,
+      "4": 1
+    },
+    "h_neurons": [
+      [
+        18,
+        4425
+      ],
+      [
+        6,
+        3295
+      ],
+      [
+        5,
+        8970
+      ],
+      [
+        16,
+        4146
+      ],
+      [
+        29,
+        5754
+      ],
+      [
+        4,
+        5627
+      ]
+    ]
+  },
+  "metadata": {
+    "model_name": "google/medgemma-1.5-4b-it",
+    "n_layers": 34,
+    "intermediate_dim": 10240,
+    "total_features": 348160
+  },
+  "score": {
+    "auroc": 0.9580251479289941,
+    "balanced_accuracy": 0.8798076923076923,
+    "random_baseline_auroc": 0.5,
+    "random_baseline_balanced_accuracy": 0.5,
+    "auroc_gap": 0.45802514792899407,
+    "n_h_neurons": 6,
+    "neuron_ratio_permille": 0.017233455882352942,
+    "threshold": 0.587865902380931
+  },
+  "l2_check": {
+    "n_l1_neurons": 6,
+    "l2_overlap_count": 0,
+    "l2_overlap_ratio": 0.0,
+    "l2_weight_concentration": 0.0027376180774135003,
+    "l2_auroc": 0.9993283979290657,
+    "l2_top_indices": [
+      99999,
+      99996,
+      99997,
+      99998,
+      99995,
+      99994
+    ],
+    "interpretation": "L1 neurons not dominant in L2 \u2014 possible collinearity with other features"
+  },
+  "stability": {
+    "n_runs": 5,
+    "neurons_per_run": [
+      7,
+      6,
+      6,
+      6,
+      5
+    ],
+    "neurons_consistent_all_runs": 4,
+    "jaccard_min": 0.5,
+    "jaccard_max": 1.0,
+    "jaccard_mean": 0.6553571428571427,
+    "interpretation": "H-Neurons consistent across bootstrap runs \u2014 robust selection"
+  },
+  "correlation": {
+    "max_correlations": [
+      0.7449,
+      0.9031,
+      0.9031,
+      0.68,
+      0.8576,
+      0.9676
+    ],
+    "n_neurons": 6,
+    "n_high_correlation": 5,
+    "interpretation": "5/6 H-Neurons have high max correlation \u2014 from correlated clusters"
+  },
+  "config": {
+    "h_neurons": [
+      [
+        18,
+        4425
+      ],
+      [
+        6,
+        3295
+      ],
+      [
+        5,
+        8970
+      ],
+      [
+        16,
+        4146
+      ],
+      [
+        29,
+        5754
+      ],
+      [
+        4,
+        5627
+      ]
+    ],
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "intermediate_dim": 10240,
+    "n_features": 348160,
+    "l1_C": 1.0,
+    "layer_stride": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "answer_cue": "",
+    "threshold": 0.587865902380931,
+    "n_consistency": 1,
+    "clf_classes": [
+      0,
+      1
+    ]
+  }
+}

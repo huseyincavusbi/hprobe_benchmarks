@@ -1,0 +1,38 @@
+  Command:     hprobes run --model google/medgemma-1.5-4b-it --data /home/admina/cot/hprobes_data/triviaqa/train.parquet --samples 2000 --top-k 5000 --l1-c 1 --gen-batch-size 8 --batch-size 4 --consistency-samples 10 --max-new-tokens 40 --judge rule --l2 --stability --correlation --random-baseline --causal-samples 200 --causal-seeds 1 --output /home/admina/cot/hprobes_benchmarks/05.26/open_ended/medgemma_5k_triviaqa
+  Mode:        open-ended (consistency)
+  Dataset:     train.parquet  (2000 samples)
+  Loading google/medgemma-1.5-4b-it... done
+  Faithful:  358 samples → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/medgemma_5k_triviaqa.faithful.responses.jsonl
+  Hallucinatory:  875 samples → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/medgemma_5k_triviaqa.hallucinatory.responses.jsonl
+  Mixed:  767 samples → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/medgemma_5k_triviaqa.mixed.responses.jsonl
+  Balanced: 358 faithful + 358 hallucinatory = 716 total
+  Consistent:  716 samples after filtering
+  Fitting (l1_C=1.0)...[hprobes] Layers: 34  |  Features: 348,160  |  Mode: H-Neuron (dual-span)
+[hprobes] Valid: 716  |  Accuracy: 0.500
+[hprobes] H-Neurons: 3  |  Ratio: 0.009‰
+[hprobes] Top layers: [(28, 1), (31, 1), (27, 1)]
+ done
+  H-Neurons:   3  (0.009‰ of all features)
+  Accuracy:    0.500
+  Layers:      {27: 1, 28: 1, 31: 1}
+
+  Scoring...
+[hprobes] AUROC: 0.726  |  Random: 0.541  |  Gap: +0.185
+  AUROC:           0.726
+  Random baseline: 0.541
+  AUROC gap:      +0.185
+  Balanced acc:    0.653
+
+  Causal validation (α → correctness rate, n=200):
+    α=0.0 → 0.545  ← suppression
+    α=1.0 → 0.550  ← baseline
+    α=2.0 → 0.540  ← amplification
+
+  McNemar test (α=0 vs α=1): b=3, c=4, p=1.0000 (not significant)
+
+  Random baseline (3 random neurons):
+    α=0.0 → 0.550
+    α=1.0 → 0.545
+    α=2.0 → 0.535
+
+  Saved → /home/admina/cot/hprobes_benchmarks/05.26/open_ended/medgemma_5k_triviaqa.json  +  medgemma_5k_triviaqa.pkl

@@ -1,0 +1,16 @@
+  Command:     hprobes transfer --probe /home/ubuntu/results/2026-06-06/google_gemma-3-4b-it_train_105451 --model google/gemma-3-4b-it --data /home/ubuntu/hprobes_data/bioasq/train.parquet --samples 2000 --batch-size 256 --gen-batch-size 128 --consistency-samples 10 --output /home/ubuntu/results/transfers/gemma_nq_to_bioasq
+  Mode:     open-ended transfer (consistency)
+  Faithful:  603 samples → /home/ubuntu/results/transfers/gemma_nq_to_bioasq.faithful.responses.jsonl
+  Hallucinatory:  914 samples → /home/ubuntu/results/transfers/gemma_nq_to_bioasq.hallucinatory.responses.jsonl
+  Mixed:  483 samples → /home/ubuntu/results/transfers/gemma_nq_to_bioasq.mixed.responses.jsonl
+  Balanced: 603 faithful + 603 hallucinatory = 1206 total
+  Consistent:  1206 samples after filtering
+
+  Scoring (transfer)...
+[hprobes transfer] AUROC: 0.809  |  Random: 0.500  |  Gap: +0.309
+  AUROC:           0.809
+  Random baseline: 0.500
+  AUROC gap:      +0.309
+  Balanced acc:    0.540
+
+  Saved → /home/ubuntu/results/transfers/gemma_nq_to_bioasq.json  +  gemma_nq_to_bioasq.pkl

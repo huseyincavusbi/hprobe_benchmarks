@@ -1,0 +1,11 @@
+  Command:     hprobes run --model google/medgemma-27b-text-it --data /home/ubuntu/hprobes_data/bioasq/train.parquet --samples 2000 --l1-c 1 --top-k 0 --batch-size 32 --gen-batch-size 8 --consistency-samples 10 --device cuda --l2 --stability --correlation --causal-samples 500 --causal-seeds 5 --random-baseline
+  Mode:        open-ended (consistency)
+  Dataset:     train.parquet  (2000 samples)
+  Loading google/medgemma-27b-text-it... done
+  Faithful:  1030 samples → results/2026-06-04/google_medgemma-27b-text-it_train_110543.faithful.responses.jsonl
+  Hallucinatory:  522 samples → results/2026-06-04/google_medgemma-27b-text-it_train_110543.hallucinatory.responses.jsonl
+  Mixed:  448 samples → results/2026-06-04/google_medgemma-27b-text-it_train_110543.mixed.responses.jsonl
+  Balanced: 522 faithful + 522 hallucinatory = 1044 total
+  Consistent:  1044 samples after filtering
+  Fitting (l1_C=1.0)...[hprobes] Layers: 62  |  Features: 1,333,248  |  Mode: H-Neuron (dual-span)
+[hprobes] Valid: 1044  |  Accuracy: 0.500

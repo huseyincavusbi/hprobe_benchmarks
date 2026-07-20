@@ -1,0 +1,19 @@
+  Command:     hprobes run --model google/gemma-3-4b-it --data /home/ubuntu/hprobes_data/triviaqa/train.parquet --samples 4000 --l1-c 1 --top-k 0 --batch-size 256 --gen-batch-size 128 --consistency-samples 10 --device cuda --l2 --stability --correlation --cluster --causal-samples 500 --causal-seeds 5 --random-baseline
+  Mode:        open-ended (consistency)
+  Dataset:     train.parquet  (4000 samples)
+  Loading google/gemma-3-4b-it... done
+  Faithful:  1275 samples → results/2026-06-04/google_gemma-3-4b-it_train_075800.faithful.responses.jsonl
+  Hallucinatory:  1643 samples → results/2026-06-04/google_gemma-3-4b-it_train_075800.hallucinatory.responses.jsonl
+  Mixed:  1082 samples → results/2026-06-04/google_gemma-3-4b-it_train_075800.mixed.responses.jsonl
+  Balanced: 1275 faithful + 1275 hallucinatory = 2550 total
+  Consistent:  2550 samples after filtering
+  Fitting (l1_C=1.0)...[hprobes] Layers: 34  |  Features: 348,160  |  Mode: H-Neuron (dual-span)
+[hprobes] Valid: 2550  |  Accuracy: 0.500
+[hprobes] H-Neurons: 2  |  Ratio: 0.006‰
+[hprobes] Top layers: [(14, 1), (9, 1)]
+ done
+  H-Neurons:   2  (0.006‰ of all features)
+  Accuracy:    0.500
+  Layers:      {9: 1, 14: 1}
+
+  Scoring...

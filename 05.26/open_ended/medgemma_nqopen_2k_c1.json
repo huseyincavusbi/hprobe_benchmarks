@@ -1,0 +1,127 @@
+{
+  "saved_at": "2026-05-31T13:25:43.008749+00:00",
+  "model": "google/medgemma-1.5-4b-it",
+  "dataset": "train.parquet",
+  "n_samples": 376,
+  "fit": {
+    "n_h_neurons": 1,
+    "neuron_ratio_permille": 0.0028722426470588233,
+    "accuracy": 0.5,
+    "layer_distribution": {
+      "14": 1
+    },
+    "h_neurons": [
+      [
+        14,
+        1027
+      ]
+    ]
+  },
+  "metadata": {
+    "model_name": "google/medgemma-1.5-4b-it",
+    "n_layers": 34,
+    "intermediate_dim": 10240,
+    "total_features": 348160
+  },
+  "score": {
+    "auroc": 0.631578947368421,
+    "balanced_accuracy": 0.5,
+    "random_baseline_auroc": 0.5,
+    "random_baseline_balanced_accuracy": 0.5,
+    "auroc_gap": 0.13157894736842102,
+    "n_h_neurons": 1,
+    "neuron_ratio_permille": 0.0028722426470588233,
+    "threshold": 0.4753090312563083
+  },
+  "l2_check": {
+    "n_l1_neurons": 1,
+    "l2_overlap_count": 0,
+    "l2_overlap_ratio": 0.0,
+    "l2_weight_concentration": 0.0005326966468656831,
+    "l2_auroc": 0.9781333333333333,
+    "l2_top_indices": [
+      99999
+    ],
+    "interpretation": "L1 neurons not dominant in L2 \u2014 possible collinearity with other features"
+  },
+  "stability": {
+    "n_runs": 5,
+    "neurons_per_run": [
+      1,
+      1,
+      1,
+      2,
+      0
+    ],
+    "neurons_consistent_all_runs": 0,
+    "jaccard_min": 0.0,
+    "jaccard_max": 0.5,
+    "jaccard_mean": 0.05,
+    "interpretation": "H-Neurons unstable across bootstrap runs \u2014 possible sensitivity to data composition"
+  },
+  "correlation": {
+    "max_correlations": [
+      0.9266
+    ],
+    "n_neurons": 1,
+    "n_high_correlation": 1,
+    "interpretation": "1/1 H-Neurons have high max correlation \u2014 from correlated clusters"
+  },
+  "config": {
+    "h_neurons": [
+      [
+        14,
+        1027
+      ]
+    ],
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "intermediate_dim": 10240,
+    "n_features": 348160,
+    "l1_C": 1.0,
+    "layer_stride": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "answer_cue": "",
+    "threshold": 0.4753090312563083,
+    "n_consistency": 1,
+    "clf_classes": [
+      0,
+      1
+    ]
+  }
+}

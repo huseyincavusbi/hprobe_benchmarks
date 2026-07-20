@@ -1,0 +1,265 @@
+{
+  "saved_at": "2026-06-04T09:02:40.074734+00:00",
+  "model": "google/gemma-3-4b-it",
+  "dataset": "train.parquet",
+  "n_samples": 1072,
+  "fit": {
+    "n_h_neurons": 9,
+    "neuron_ratio_permille": 0.02585018382352941,
+    "accuracy": 0.5,
+    "layer_distribution": {
+      "29": 2,
+      "30": 1,
+      "28": 1,
+      "31": 1,
+      "27": 1,
+      "16": 1,
+      "26": 1,
+      "14": 1
+    },
+    "h_neurons": [
+      [
+        29,
+        1957
+      ],
+      [
+        30,
+        1130
+      ],
+      [
+        28,
+        9989
+      ],
+      [
+        31,
+        2761
+      ],
+      [
+        29,
+        5754
+      ],
+      [
+        27,
+        8282
+      ],
+      [
+        16,
+        4146
+      ],
+      [
+        26,
+        3593
+      ],
+      [
+        14,
+        1027
+      ]
+    ]
+  },
+  "metadata": {
+    "model_name": "google/gemma-3-4b-it",
+    "n_layers": 34,
+    "intermediate_dim": 10240,
+    "total_features": 348160
+  },
+  "score": {
+    "auroc": 0.8113534094842506,
+    "balanced_accuracy": 0.7116649359640014,
+    "random_baseline_auroc": 0.5,
+    "random_baseline_balanced_accuracy": 0.5,
+    "auroc_gap": 0.3113534094842506,
+    "n_h_neurons": 9,
+    "neuron_ratio_permille": 0.02585018382352941,
+    "threshold": 0.5303451967784125
+  },
+  "causal_validation": {
+    "h_neurons": {
+      "0.0": {
+        "mean": 0.4716,
+        "se": 0.003550774563387536,
+        "rates": [
+          0.478,
+          0.474,
+          0.48,
+          0.458,
+          0.468
+        ]
+      },
+      "1.0": {
+        "mean": 0.49559999999999993,
+        "se": 0.002850964748992876,
+        "rates": [
+          0.502,
+          0.494,
+          0.5,
+          0.498,
+          0.484
+        ]
+      },
+      "2.0": {
+        "mean": 0.4896,
+        "se": 0.002850964748992876,
+        "rates": [
+          0.492,
+          0.484,
+          0.5,
+          0.49,
+          0.482
+        ]
+      }
+    },
+    "n_samples": 500,
+    "n_seeds": 5,
+    "mcnemar_suppress_vs_baseline": {
+      "statistic": 31.03448275862069,
+      "p_value": 0.0,
+      "b": 28,
+      "c": 88,
+      "n_discordant": 116
+    },
+    "random_baseline": {
+      "0.0": 0.488,
+      "1.0": 0.482,
+      "2.0": 0.482
+    }
+  },
+  "l2_check": {
+    "n_l1_neurons": 9,
+    "l2_overlap_count": 1,
+    "l2_overlap_ratio": 0.1111111111111111,
+    "l2_weight_concentration": 0.001689255145199946,
+    "l2_auroc": 0.9796950625717649,
+    "l2_top_indices": [
+      348157,
+      348159,
+      348158,
+      348096,
+      348156,
+      348155,
+      348153,
+      348152,
+      348151
+    ],
+    "interpretation": "L1 neurons not dominant in L2 \u2014 possible collinearity with other features"
+  },
+  "stability": {
+    "n_runs": 5,
+    "neurons_per_run": [
+      11,
+      7,
+      6,
+      9,
+      8
+    ],
+    "neurons_consistent_all_runs": 3,
+    "jaccard_min": 0.4444444444444444,
+    "jaccard_max": 0.6666666666666666,
+    "jaccard_mean": 0.5462121212121211,
+    "interpretation": "H-Neurons unstable across bootstrap runs \u2014 possible sensitivity to data composition"
+  },
+  "correlation": {
+    "max_correlations": [
+      0.7795,
+      0.6515,
+      0.6528,
+      0.813,
+      0.6428,
+      0.6503,
+      0.8031,
+      0.8559,
+      0.9476
+    ],
+    "n_neurons": 9,
+    "n_high_correlation": 5,
+    "interpretation": "5/9 H-Neurons have high max correlation \u2014 from correlated clusters"
+  },
+  "config": {
+    "h_neurons": [
+      [
+        29,
+        1957
+      ],
+      [
+        30,
+        1130
+      ],
+      [
+        28,
+        9989
+      ],
+      [
+        31,
+        2761
+      ],
+      [
+        29,
+        5754
+      ],
+      [
+        27,
+        8282
+      ],
+      [
+        16,
+        4146
+      ],
+      [
+        26,
+        3593
+      ],
+      [
+        14,
+        1027
+      ]
+    ],
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "intermediate_dim": 10240,
+    "n_features": 348160,
+    "l1_C": 1.0,
+    "layer_stride": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "answer_cue": "",
+    "threshold": 0.5303451967784125,
+    "n_consistency": 1,
+    "clf_classes": [
+      0,
+      1
+    ]
+  }
+}

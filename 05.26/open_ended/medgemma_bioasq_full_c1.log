@@ -1,0 +1,4 @@
+  Command:     hprobes run --model google/medgemma-1.5-4b-it --data /home/admina/cot/hprobes_data/bioasq/train.parquet --samples -1 --gen-batch-size 8 --l1-c 1 --top-k 100000 --l2 --stability --correlation --random-baseline --consistency-samples 10 --max-new-tokens 40 --output /home/admina/cot/hprobes_benchmarks/05.26/open_ended/medgemma_bioasq_full_c1
+  Mode:        open-ended (consistency)
+  Dataset:     train.parquet  (3266 samples)
+  Loading google/medgemma-1.5-4b-it... done

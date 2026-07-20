@@ -1,0 +1,38 @@
+  Command:     hprobes run --model google/gemma-3-4b-it --data /home/ubuntu/hprobes_data/nq_open/train.parquet --samples 2000 --l1-c 1 --top-k 0 --batch-size 256 --gen-batch-size 128 --consistency-samples 10 --device cuda --l2 --stability --correlation --causal-samples 500 --causal-seeds 5 --random-baseline
+  Mode:        open-ended (consistency)
+  Dataset:     train.parquet  (2000 samples)
+  Loading google/gemma-3-4b-it... done
+  Faithful:  339 samples → results/2026-06-06/google_gemma-3-4b-it_train_105451.faithful.responses.jsonl
+  Hallucinatory:  1182 samples → results/2026-06-06/google_gemma-3-4b-it_train_105451.hallucinatory.responses.jsonl
+  Mixed:  479 samples → results/2026-06-06/google_gemma-3-4b-it_train_105451.mixed.responses.jsonl
+  Balanced: 339 faithful + 339 hallucinatory = 678 total
+  Consistent:  678 samples after filtering
+  Fitting (l1_C=1.0)...[hprobes] Layers: 34  |  Features: 348,160  |  Mode: H-Neuron (dual-span)
+[hprobes] Valid: 678  |  Accuracy: 0.500
+[hprobes] H-Neurons: 7  |  Ratio: 0.020‰
+[hprobes] Top layers: [(15, 2), (17, 1), (6, 1), (27, 1), (26, 1)]
+ done
+  H-Neurons:   7  (0.020‰ of all features)
+  Accuracy:    0.500
+  Layers:      {6: 1, 14: 1, 15: 2, 17: 1, 26: 1, 27: 1}
+
+  Scoring...
+[hprobes] AUROC: 0.702  |  Random: 0.500  |  Gap: +0.202
+  AUROC:           0.702
+  Random baseline: 0.500
+  AUROC gap:      +0.202
+  Balanced acc:    0.676
+
+  Causal validation (α → correctness rate, n=500, 5 seeds):
+    α=0.0 → 0.461 ± 0.003  ← suppression
+    α=1.0 → 0.478 ± 0.004  ← baseline
+    α=2.0 → 0.478 ± 0.005  ← amplification
+
+  McNemar test (α=0 vs α=1): b=36, c=79, p=0.0001 (significant)
+
+  Random baseline (7 random neurons):
+    α=0.0 → 0.458
+    α=1.0 → 0.466
+    α=2.0 → 0.470
+
+  Saved → results/2026-06-06/google_gemma-3-4b-it_train_105451.json  +  google_gemma-3-4b-it_train_105451.pkl

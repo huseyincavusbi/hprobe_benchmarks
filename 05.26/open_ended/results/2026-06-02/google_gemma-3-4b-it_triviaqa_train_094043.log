@@ -1,0 +1,8 @@
+  Command:     hprobes run --model google/gemma-3-4b-it --data data/triviaqa_train.parquet --samples 2 --gen-batch-size 2 --batch-size 2 --l1-c 1 --top-k 100 --consistency-samples 2 --max-new-tokens 10
+  Mode:        open-ended (consistency)
+  Dataset:     triviaqa_train.parquet  (2 samples)
+  Loading google/gemma-3-4b-it... done
+  Hallucinatory:  2 samples → results/2026-06-02/google_gemma-3-4b-it_triviaqa_train_094043.hallucinatory.responses.jsonl
+  Warning: No consistent samples (faithful=0, hallucinatory=2)
+  Consistent:  0 samples after filtering
+  Error: no consistent samples — try more input samples or lower l1_C
